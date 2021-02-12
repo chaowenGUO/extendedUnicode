@@ -4,10 +4,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@main
-        - uses: actions/setup_python@main
+        - uses: actions/setup-python@main
           with:
               python-version: '3.x'
-        - uses: actions/setup_node@main
+        - uses: actions/setup-node@main
           with:
               node-version: '15.x'
         - run: |
