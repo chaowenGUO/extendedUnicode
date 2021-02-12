@@ -10,6 +10,10 @@ jobs:
         - uses: actions/setup-node@main
           with:
               node-version: '15.x'
+        - uses: actions/setup-java@main
+          with:
+              java-version: 15
         - run: |
               python extendedUnicode.py
-              node exentendedUnicode.js
+              node extendedUnicode.js
+              java extendedUnicode.java
