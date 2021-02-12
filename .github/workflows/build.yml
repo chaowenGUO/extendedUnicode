@@ -22,4 +22,6 @@ jobs:
         container: gcc
         steps:
         - uses: actions/checkout@main
-        - run: g++ -v
+        - run: |
+              g++ -std=c++2b -O2 -march=native extendedUnicode.cpp
+              ./a.out  
