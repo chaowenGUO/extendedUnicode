@@ -17,11 +17,5 @@ jobs:
               python extendedUnicode.py
               node extendedUnicode.js
               java extendedUnicode.java
-    cpp:
-        runs-on: ubuntu-latest
-        container: gcc
-        steps:
-        - uses: actions/checkout@main
-        - run: |
-              g++ -std=c++20 -O2 -march=native extendedUnicode.cpp
+              g++-10 -std=c++20 -O2 -march=native extendedUnicode.cpp
               ./a.out  
