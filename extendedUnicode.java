@@ -1,7 +1,7 @@
 public class Main
 {
-    public static void main(String[] args)
+    public static void main(java.lang.String[] args)
     {
-        System.out.println(Character.toString(0x10035));
+        java.lang.System.out.println(java.lang.Character.toString(0x10035));
     }
 }
