@@ -5,3 +5,6 @@ jobs:
         steps:
         - uses: actions/checkout@main
         - uses: actions/setup_python@main
+          with:
+              python-version: '3.x'
+        - run: python extendedUnicode.py
