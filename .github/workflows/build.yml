@@ -17,3 +17,4 @@ jobs:
               python extendedUnicode.py
               node extendedUnicode.js
               java extendedUnicode.java
+              g++ -v
