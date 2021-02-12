@@ -7,4 +7,9 @@ jobs:
         - uses: actions/setup_python@main
           with:
               python-version: '3.x'
-        - run: python extendedUnicode.py
+        - uses: actions/setup_node@main
+          with:
+              node-version: '15.x'
+        - run: |
+              python extendedUnicode.py
+              node exentendedUnicode.js
